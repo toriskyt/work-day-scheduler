@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="Assets/style.css" />
     <title>Work Day Scheduler</title>
   </head>
 
@@ -26,19 +26,59 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
-      var currentTime - moment("MM/DD/YYY hh:mm");
-      <p id="currentDay" class="lead"></p>
+      moment().format(dddd, MMMM Do YYYY)
     </header>
+
+    <!-- var currtime = moment("10/6/2021 6:00 am", "MM/DD/YYYY hh:mm a");
+    var appttime = moment("10/6/2021 7:00 am", "MM/DD/YYYY hh:mm a");
+    var currtimeX = parseInt(currtime.format("x")) 
+    var appttimeX = parseInt(appttime.format("x"))
+    var currNewTime = moment("10/6/2021 6:36 am", "MM/DD/YYYY hh:mm a");
+    var currNewTimeX = parseInt(currNewTime.format("x"))
+    if(appttimeX < currNewTime){
+    console.log("Don't have time...");
+    }
+    else{
+    console.log("Still have time...");
+    console.log( (appttimeX - currNewTimeX) / 1000 / 60 / 60 + "hours");
+    } -->
     <div class="container">
-      <span class="d-block p-2 bg-primary text-white">9:00am</span>
-      <span class="d-block p-2 bg-dark text-white">10:00am</span>
-      <span class="d-block p-2 bg-primary text-white">11:00am</span>
-      <span class="d-block p-2 bg-dark text-white">12:00pm</span>
-      <span class="d-block p-2 bg-primary text-white">1:00pm</span>
-      <span class="d-block p-2 bg-dark text-white">2:00pm</span>
-      <span class="d-block p-2 bg-primary text-white">3:00pm</span>
-      <span class="d-block p-2 bg-dark text-white">4:00pm</span>
-      <span class="d-block p-2 bg-primary text-white">5:00pm</span>
+      <section class="row">09:00am
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row">10:00am
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row">11:00am
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row">12:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row"> 01:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row"> 02:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row"> 03:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row"> 04:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
+      <section class="row"> 05:00pm
+        <textarea></textarea>
+        <button id="saveBtn">save</button>
+      </section>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
